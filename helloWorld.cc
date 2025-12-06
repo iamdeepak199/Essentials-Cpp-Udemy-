@@ -48,3 +48,12 @@ int main()
 	return 0;
 }
 
+<<<<<<< HEAD
+=======
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/iamdeepak199/Essentials.git
+git push -u origin main
+>>>>>>> cef802166a6a6dd5d5e0bc96cfc4d2c184930329

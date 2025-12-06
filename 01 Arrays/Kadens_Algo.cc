@@ -56,7 +56,11 @@ int main()
 
 output.txt
  
+<<<<<<< HEAD
 Optimal approach :O(n)  
+=======
+Brute Force :O(n)  
+>>>>>>> cef802166a6a6dd5d5e0bc96cfc4d2c184930329
 
 Enter the Size of the Array :
 -2 3 4 -1 5 -12 6 1 3 
