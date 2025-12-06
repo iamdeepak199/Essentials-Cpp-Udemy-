@@ -1,0 +1,34 @@
+<snippet>
+    <content><![CDATA[
+#include <bits/stdc++.h>
+using namespace std;
+
+void fastio(bool read = false) 
+{
+    if(read) 
+    {
+        #ifndef ONLINE_JUDGE
+        freopen("input.txt","r",stdin);
+        freopen("output.txt","w",stdout);
+        freopen("error.txt","w",stderr);
+        #endif  
+    }
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+}
+
+int main() 
+{
+    fastio(true);
+    cout << "Hello World" << endl;
+    return 0;
+}
+]]></content>
+
+    <!-- The shortcut you type to expand the snippet -->
+    <tabTrigger>cpp</tabTrigger>
+
+    <!-- Which files this snippet is active in -->
+    <scope>source.c++, source.cpp</scope>
+</snippet>

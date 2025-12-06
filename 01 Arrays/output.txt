@@ -1,0 +1,11 @@
+Enter the charaters of the Array : 
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
