@@ -18,27 +18,22 @@ void fastio(bool read = false)
 int main() 
 {
     fastio(true);
-    char arr[][10] = {
-    	"one",
-    	"two",
-    	"three",
-    	"four",
-    	"five",
-    	"six",
-    	"seven",
-    	"eight",
-    	"nine",
-    	"ten"
-    };
-    cout << "Enter the charaters of the Array : "<<endl;
-  
-    for(int j = 0; j < 10; j++)
-    {
-    	cout << arr[j];
-    	cout<<endl;
-   	}
-   	
+    char arr[1000];
+    cout << "Enter the characters of the Array : " << endl;
 
+    int length = 0;
+    char temp = cin.get();
+
+    while (temp != '\n') 
+    {
+        cout << temp;    
+        arr[length] = temp; 
+        length++;
+
+        temp = cin.get(); 
+    }
+
+    cout << "\nLength = " << length << endl;
 
     return 0;
 }
@@ -48,15 +43,8 @@ int main()
 output.txt
 
 Enter the charaters of the Array : 
-one
-two
-three
-four
-five
-six
-seven
-eight
-nine
-ten
+hello my name is deepak i'm 
+asoftware engineer wright now 
+i'm learning cpp basic's concepts.
 
 */

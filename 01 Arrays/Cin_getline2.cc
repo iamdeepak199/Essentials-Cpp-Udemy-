@@ -18,45 +18,20 @@ void fastio(bool read = false)
 int main() 
 {
     fastio(true);
-    char arr[][10] = {
-    	"one",
-    	"two",
-    	"three",
-    	"four",
-    	"five",
-    	"six",
-    	"seven",
-    	"eight",
-    	"nine",
-    	"ten"
-    };
-    cout << "Enter the charaters of the Array : "<<endl;
-  
-    for(int j = 0; j < 10; j++)
-    {
-    	cout << arr[j];
-    	cout<<endl;
-   	}
-   	
+    cout << "Enter the characters of the Array : " << endl;
 
-
+    char sentance[100];
+    cin.getline(sentance,1000);
+    cout<<sentance;
     return 0;
 }
+
 
 
 /*  
 output.txt
 
-Enter the charaters of the Array : 
-one
-two
-three
-four
-five
-six
-seven
-eight
-nine
-ten
-
+Enter the characters of the Array : 
+hello every one this side deepak 
+this the example of cin.getline()method.
 */

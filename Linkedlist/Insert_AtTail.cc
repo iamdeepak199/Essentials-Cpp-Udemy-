@@ -29,10 +29,19 @@ public:
     }
 };
 
-void insertAtHead(node*& head, int val) {
+void insertAtTail(node*& head, int val) {
     node* new_node = new node(val);
-    new_node->next = head;
-    head = new_node;
+    if(head == NULL){
+        head = new_node;
+        return;
+    }
+
+    node* temp = head;
+    while(temp->next != NULL){
+            temp = temp ->next;
+    }
+    temp -> next = new_node;
+
 }
 
 void display(node* head) {
@@ -57,7 +66,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
         int val;
         cin >> val;
-        insertAtHead(head, val);
+        insertAtTail(head, val);
     }
 
     cout << "Linked list: ";
