@@ -74,3 +74,14 @@ int main() {
 
     return 0;
 }
+
+
+/*
+
+output :
+
+Enter number of nodes: Enter 6 values:
+Linked list: 1 2 3 4 5 6 
+
+
+*/
