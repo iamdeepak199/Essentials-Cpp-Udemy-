@@ -1,2 +1,4 @@
-Enter the Value of N :
-1 2 3 4 5 
+Enter the Size of the Array & key:5
+Enter the elements of the array : 1 2 3 4 5 
+Enter Key -> 3
+key is Present at index:2

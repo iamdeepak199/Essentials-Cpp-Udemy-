@@ -22,27 +22,26 @@ int main()
     fastio(true);
     cout << "Enter A string : " << endl; 
     string str;
+    vector<char>vowels ={'a','e','i','o','u'};
+    vector<char>ans;
 	getline(cin, str);
-	bool is_Palindrom = true;
-
 	for(int i = 0; i < str.size(); i++){
     cout << str[i];
 	}
-	int i = 0, j = str.length() - 1;
-	while(i < j){
-		if(str[i] != str[j]){
-			is_Palindrom = false;
-			break;
-		}
-		i++;
-        j--;
-	}
-	if(is_Palindrom)
-		cout<<" strings is Palindrom : "<<endl;
-	else
-		cout<<" string is Not Palindrom : "<<endl;
-
-
+    cout<<endl;
+    for(int i = 0; i < str.size(); i++){
+        if(find(vowels.begin(), vowels.end(),
+                      str[i]) != vowels.end()){
+            continue;
+        }
+        else{
+            ans.push_back(str[i]);
+        }
+    }
+    cout<<"After remove vowels :"<<endl;
+    for(int i = 0; i < ans.size(); i++){
+    cout << ans[i];
+    }
     return 0;
 }
 
@@ -50,7 +49,11 @@ int main()
 /*
 
 output :
+
 Enter A string : 
-mam strings is Palindrom : 
+deepak bhardwaj 
+After remove vowels :
+dpk bhrdwj 
+
 
 */

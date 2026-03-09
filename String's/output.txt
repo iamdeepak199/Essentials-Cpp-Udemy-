@@ -1,0 +1,4 @@
+Enter A string : 
+deepak bhardwaj 
+After remove vowels :
+dpk bhrdwj 

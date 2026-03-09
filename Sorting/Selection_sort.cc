@@ -54,3 +54,15 @@ int main()
     }
     return 0;
 }
+
+/*
+
+output: 
+
+Enter the elements of the Array :
+5 4 3 2 1 6 7 
+Sorted Array : 
+1 2 4 3 6 5 7 
+
+
+*/
